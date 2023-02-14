@@ -8,10 +8,8 @@ public class PlayerAnimationHandler : MonoBehaviour
 
     [HideInInspector] public Vector2 dir = Vector2.zero;
     byte prevDir = 0;
-    byte attackDir = 0;
 
     bool plCanMove;
-    bool plAttacks;
 
     private void Start()
     {
@@ -52,8 +50,6 @@ public class PlayerAnimationHandler : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GetDirection();
-
-            plAttacks = true;
             anima.SetBool("Attacking", true);
         }
     }

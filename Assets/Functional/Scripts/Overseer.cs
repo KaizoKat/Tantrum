@@ -1,11 +1,10 @@
-
-
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Overseer
 {
-
-    private static PlayerControlls GetPlayerControlls()
+    public static PlayerControlls GetPlayerControlls()
     {
         return Object.FindObjectOfType<PlayerControlls>();
     }
@@ -25,7 +24,7 @@ public class Overseer
         return Object.FindObjectOfType<WorldManager>();
     }
 
-    public DebugMenu GetDebugMenu()
+    public static DebugMenu GetDebugMenu()
     {
         return Object.FindObjectOfType<DebugMenu>();
     }

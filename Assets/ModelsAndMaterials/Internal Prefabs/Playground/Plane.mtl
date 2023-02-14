@@ -1,0 +1,5 @@
+newmtl Playground
+map_Kd dirt.png
+Kd 1.0 1.0 1.0
+d 1.0
+
